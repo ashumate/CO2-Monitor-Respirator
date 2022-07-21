@@ -10,3 +10,7 @@ What you'll need to recreate this version
 4. The custom version of circuitpython from this repo
 
 Once you've gathered everything together,
+
+
+
+If you want to make changes to the mounting plate, you can access the original in TinkerCad, just dupicate it and modify to your heart's content https://www.tinkercad.com/things/aItuTWLHWLe-co2-monitor-respirator-mounting-plate
