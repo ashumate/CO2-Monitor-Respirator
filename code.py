@@ -105,13 +105,13 @@ displayio.release_displays()
 
 # setup fourwire for TFT display
 spi = board.SPI()
-tft_cs = board.D5
-tft_dc = board.D9
+tft_cs = board.D10
+tft_dc = board.D12
 
 # setup displays
 display_bus0 = displayio.I2CDisplay(board.I2C(), device_address=0x3C)
 display_bus1 = displayio.FourWire(
-     spi, command=tft_dc, chip_select=tft_cs, reset=board.D6
+     spi, command=tft_dc, chip_select=tft_cs, reset=board.D11
 )
 
 # Define the first display
