@@ -31,19 +31,20 @@ Solder the neopixels to ground, battery out and a digital pin on the proto board
 
 Since I don't have a schematic/wiring/hookup diagram here's how I have things wired
 
-Protoboard/Feather > Neopixel
-Gnd > Gnd
-Batt > 5VDC In
-D13 > Signal In
+-Protoboard/Feather > Neopixel
+-Gnd > Gnd
+-Batt > 5VDC In
+-D13 > Signal In
 
-Protoboard/Feather > TFT Display
-GND > GND
-3V > Vin
-SCK > SCK
-MO > MOSI
-D10 > CS
-D11 > RST
-D12
+-Protoboard/Feather > TFT Display
+-GND > GND
+-3V > Vin
+-SCK > SCK
+-MO > MOSI
+-D10 > CS
+-D11 > RST
+-D12 > D/C
+
 **A note about this, if you want to program the buttons to do things, use pins 9, 10, 11, & 12 for the TFT display and neopixels!**
 
 If you want to make changes to the mounting plate, like add a logo or your social media handles you can access the original in TinkerCad, just dupicate it and modify to your heart's content https://www.tinkercad.com/things/aItuTWLHWLe-co2-monitor-respirator-mounting-plate
