@@ -178,7 +178,7 @@ display1.show(splash1)
 pixel0 = neopixel.NeoPixel(board.NEOPIXEL, 1, brightness=0.01)
 # mask neopixels
 # uncomment when connected dont forget to set pin...
-pixel1 = neopixel.NeoPixel(board.D10, 48, pixel_order=neopixel.RGBW, brightness=0.01)
+pixel1 = neopixel.NeoPixel(board.D13, 48, pixel_order=neopixel.RGBW, brightness=0.01)
 
 # Let's light this candle
 while True:
