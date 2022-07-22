@@ -1,6 +1,6 @@
 # CO2-Monitor-Respirator
 
-### This is a respirator setup that I made after some coments online that while sites like Etsy have very stylish 'cyberpunk' respirators, none are very functional. This is the first iteration, with future ones planned.
+### This is a respirator setup that I made after some coments online that while sites like Etsy have very stylish 'cyberpunk' respirators, none are very functional. This is the first iteration, with future ones planned ...maybe.
 
 What you'll need to recreate this version and can give you a jumping off point if you want to create your own.
 
