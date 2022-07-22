@@ -159,16 +159,12 @@ smiley = displayio.TileGrid(
     tile_height=200,
 )
 #Like co2line above but we want bigger text
-#I'm trying to get the CO2 value label to stay centered, but this isn't working...
-# def co2_level(value):
-#     if scd30.CO2 < CO2_CUTOFFS[0]:
-#         bitmap_label.Label(terminalio.FONT, text="%d" % scd30.CO2, scale=6, color=0xFFFFFF, x=66, y=275)
-#     else:
-#         bitmap_label.Label(terminalio.FONT, text="%d" % scd30.CO2, scale=6, color=0xFFFFFF, x=48, y=275)
-
-co2_label = bitmap_label.Label(terminalio.FONT, text="CO2 PPM", scale=4, color=0xFFFFFF, x=38, y=220)
-co2_level = bitmap_label.Label(terminalio.FONT, text="%d" % scd30.CO2, scale=6, color=0xFFFFFF, x=66, y=275)
-
+co2_label = bitmap_label.Label(terminalio.FONT, text="CO2 PPM", scale=4, color=0xFFFFFF)
+co2_label.anchor_point = (0.5, 0.5)
+co2_label.anchored_position = (120, 220)
+co2_level = bitmap_label.Label(terminalio.FONT, text="%d" % scd30.CO2, scale=6, color=0xFFFFFF)
+co2_level.anchor_point = (0.5, 0.5)
+co2_level.anchored_position = (120, 275)
 
 # Lets setup display1 context and show the data
 splash1 = displayio.Group()
