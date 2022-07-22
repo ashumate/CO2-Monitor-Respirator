@@ -21,6 +21,8 @@ I created the code by splicing together a lot of other code around the Adafruit 
 11. The STLs in this repo printed, if you just want a badge that is also a CO2 monitor without a mask you can just print the allinonebadge stl and skip the Neopixels.
 12. The custom version of circuitpython from this repo
 
+Hardware to hold items on the badge are M2x6 and M2x8 screws and M2 nuts
+
 Once you've gathered everything together, load the custom boot loader, code and bitmaps, make sure you grab the adafruit circuitpython libraries and put the apropriate ones on the controler. 
 
 Solder the headers onto the controller protoboard and display board
