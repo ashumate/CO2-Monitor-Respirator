@@ -4,7 +4,7 @@
 
 What you'll need to recreate this version and can give you a jumping off point if you want to create your own.
 
-**WARNING** I am not a developer or designer, just some guy that threw a bunch of parts together and happened to have it all worked out, And since actually completing this project from inspiration to design to build am not going to have many excuses for my wife as to why I don't get more done around the house. Share and enjoy!
+**WARNING** I am not a developer or designer, just some guy that threw a bunch of parts together and happened to have it all work out, and since actually completing this project from inspiration to design to build am not going to have many excuses for my wife as to why I don't get more done around the house. Share and enjoy!
 
 I created the code by splicing together a lot of other code around the Adafruit and Circuitpython websites and am still tinkering with it. Currently the smileys.bmp file is specific to the DEF CON security conference and will be updated in a future release (maybe, if I get around to it...)
 
