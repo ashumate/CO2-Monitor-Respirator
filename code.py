@@ -105,14 +105,15 @@ def update_display(value):
 displayio.release_displays()
 
 # setup fourwire for TFT display
+# if the mask display isn't working verify the cs dc and reset pins, this has flumoxed me
 spi = board.SPI()
-tft_cs = board.D10
+tft_cs = board.D11
 tft_dc = board.D12
 
 # setup displays
 display_bus0 = displayio.I2CDisplay(board.I2C(), device_address=0x3C)
 display_bus1 = displayio.FourWire(
-     spi, command=tft_dc, chip_select=tft_cs, reset=board.D11
+     spi, command=tft_dc, chip_select=tft_cs, reset=board.D10
 )
 
 # Define the first display
@@ -200,5 +201,5 @@ while True:
 
     except:
         pass
-    next_update_time += UPDATE_INTEVAL_SEC
+    next_update_time += UPDATE_INTERVAL_SEC
     time.sleep(max(next_update_time - time.time(), MIN_LOOP_DELAY_SEC))
