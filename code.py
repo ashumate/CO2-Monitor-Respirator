@@ -19,7 +19,8 @@ from adafruit_display_text import bitmap_label
 
 # --| User Config |----
 CO2_CUTOFFS = (1000, 2000, 5000)
-UPDATE_RATE = 0.5
+UPDATE_INTERVAL_SEC = 0.5
+MIN_LOOP_DELAY_SEC = 0.0
 # ---------------------
 
 # SCD-30 has tempremental I2C with clock stretching, datasheet recommends
@@ -180,6 +181,8 @@ pixel0 = neopixel.NeoPixel(board.NEOPIXEL, 1, brightness=0.01)
 # uncomment when connected dont forget to set pin...
 pixel1 = neopixel.NeoPixel(board.D13, 48, pixel_order=neopixel.RGBW, brightness=0.01)
 
+next_update_time = time.time()
+
 # Let's light this candle
 while True:
     #Update onboard display values
@@ -197,4 +200,5 @@ while True:
 
     except:
         pass
-    time.sleep(UPDATE_RATE)
+    next_update_time += UPDATE_INTEVAL_SEC
+    time.sleep(max(next_update_time - time.time(), MIN_LOOP_DELAY_SEC))
