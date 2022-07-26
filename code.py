@@ -1,6 +1,6 @@
 # Drew's CO2 monitoring DEF CON badge/mask
 # A lot of this code is taken from other Adafruit code examples, kinda a frankencode...
-# I need to move some pins around so that I can use the buttons on the OLED display to do things, like run a calibration routine
+# Eventually I will use the buttons on the OLED display to do things, like run a calibration routine
 
 import time
 import board
@@ -56,19 +56,19 @@ def pixel0_color(value):
         pixel0.show()
         time.sleep(0.25)
 
-# mask neopixel color change based on level and blink if over level 4
+# mask neopixel color change based on level and blink if over level 4 Also these are GRBW, not RGBW...
 def pixel1_color(value):
     if scd30.CO2 < CO2_CUTOFFS[0]:
         pixel1.fill((255,0,0,0))
         pixel1.show()
     elif scd30.CO2 < CO2_CUTOFFS[1]:
-        pixel1.fill((255,255,0,0))
+        pixel1.fill((150,255,0,0))
         pixel1.show()
     elif scd30.CO2 < CO2_CUTOFFS[2]:
         pixel1.fill((0,255,0,0))
         pixel1.show()
     else:
-        pixel1.fill((64,255,0,0))
+        pixel1.fill((40,255,0,0))
         pixel1.show()
         time.sleep(0.5)
         pixel1.fill((0,0,0,0))
