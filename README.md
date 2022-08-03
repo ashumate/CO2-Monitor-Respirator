@@ -2,7 +2,7 @@
 
 ### This is a respirator setup that I made after some coments online that while sites like Etsy have very stylish 'cyberpunk' respirators, none are very functional. This is the first iteration, with future ones planned ...maybe.
 
-### *There may be an issue with the firmware in the repo, if you pull it down and it doesn't work please open an issue and I wil re-upload a known working copy*
+### *There may be an issue with the firmware in the repo, if you pull it down and it doesn't work please open an issue and I will re-upload a known working copy*
 
 What you'll need to recreate this version and can give you a jumping off point if you want to create your own.
 
