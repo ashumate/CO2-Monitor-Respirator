@@ -43,8 +43,8 @@ Since I don't have a schematic/wiring/hookup diagram here's how I have things wi
 - 3V > Vin
 - SCK > SCK
 - MO > MOSI
-- D10 > CS
-- D11 > RST
+- D10 > RST
+- D11 > CS
 - D12 > D/C
 
 **A note about this, if you want to program the buttons to do things, use pins 9, 10, 11, & 12 for the TFT display and neopixels!**
