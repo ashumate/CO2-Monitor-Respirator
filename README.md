@@ -4,6 +4,8 @@
 
 ### *There may be an issue with the firmware in the repo, if you pull it down and it doesn't work please open an issue and I will re-upload a known working copy*
 
+### The v2 STL files have been modified to add cable strain relief to prefent wires from breaking. 
+
 What you'll need to recreate this version and can give you a jumping off point if you want to create your own.
 
 **WARNING** I am not a developer or designer, just some guy that threw a bunch of parts together and happened to have it all work out, and since actually completing this project from inspiration to design to build am not going to have many excuses for my wife as to why I don't get more done around the house. Share and enjoy!
